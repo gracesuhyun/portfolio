@@ -274,8 +274,8 @@ button:focus {
   width: 100%;
   background: var(--dark-blue);
   border-left: 2px solid var(--yellow);
-  -webkit-animation: typing 1.5s steps(13) infinite;
-          animation: typing 1.5s steps(13) infinite;
+  -webkit-animation: typing 1.5s steps(11) infinite;
+          animation: typing 1.5s steps(11) infinite;
 }
 
 @-webkit-keyframes typing {
@@ -586,7 +586,7 @@ button:focus {
 
 
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 420px) {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -629,7 +629,7 @@ button:focus {
   }
 }
 
-@media all and (min-width: 401px) and (max-width: 770px){
+@media all and (min-width: 421px) and (max-width: 770px){
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;

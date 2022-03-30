@@ -229,7 +229,7 @@ button:focus {
   width: 100%;
   background: var(--dark-blue);
   border-left: 2px solid var(--yellow);
-  animation: typing 1.5s steps(13) infinite;
+  animation: typing 1.5s steps(11) infinite;
 }
 
 @keyframes typing {
@@ -469,7 +469,7 @@ button:focus {
 
 
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 420px) {
   .grid {
     grid-template-columns: 1fr;
   }
@@ -491,18 +491,21 @@ button:focus {
     flex-direction: column;
   }
 
-  .contact-container .contact-info {
-    margin-bottom: 40px;
+  .contact-info {
+    margin-bottom: 20px;
   }
 
-  .contact-container .contact-info, 
+  .contact-info, 
   .contact-form {
     width: 100%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
   }
+
 }
 
-@media all and (min-width: 401px) and (max-width: 770px){
+@media all and (min-width: 421px) and (max-width: 770px){
   .grid {
     grid-template-columns: 1fr 1fr;
   }
