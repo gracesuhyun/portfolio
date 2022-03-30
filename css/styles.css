@@ -475,6 +475,10 @@ button:focus {
     width: 97%;
   }
 
+  .grid_item {
+    margin: 5px auto;
+  }
+
   .navigation {
     flex-direction: column;
   }
