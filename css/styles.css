@@ -472,6 +472,7 @@ button:focus {
 @media all and (max-width: 420px) {
   .grid {
     grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
   .navigation {

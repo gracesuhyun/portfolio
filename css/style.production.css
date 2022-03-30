@@ -590,6 +590,10 @@ button:focus {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .navigation {
