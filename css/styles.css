@@ -497,7 +497,6 @@ button:focus {
 
   .contact-info, 
   .contact-form {
-    width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
