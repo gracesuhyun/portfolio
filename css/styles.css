@@ -472,7 +472,7 @@ button:focus {
 @media all and (max-width: 450px) {
   .grid {
     grid-template-columns: 1fr;
-    width: 100%;
+    width: 97%;
   }
 
   .navigation {
