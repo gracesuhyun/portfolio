@@ -309,7 +309,7 @@ button:focus {
 }
 
 .contact-intro {
-  max-width: 800px;
+  max-width: 850px;
   text-align: center;
 }
 
@@ -333,7 +333,7 @@ button:focus {
 }
 
 .contact-info {
-  width: 30%;
+  width: 40%;
   display: flex;
   flex-direction: column;
 }
@@ -375,7 +375,7 @@ button:focus {
 }
 
 .contact-form {
-  width: 40%;
+  width: 50%;
   padding: 40px;
   background: white;
 }
@@ -469,10 +469,10 @@ button:focus {
 
 
 
-@media all and (max-width: 420px) {
+@media all and (max-width: 450px) {
   .grid {
     grid-template-columns: 1fr;
-    flex-direction: column;
+    width: 100%;
   }
 
   .navigation {
@@ -505,7 +505,7 @@ button:focus {
 
 }
 
-@media all and (min-width: 421px) and (max-width: 770px){
+@media all and (min-width: 451px) and (max-width: 770px){
   .grid {
     grid-template-columns: 1fr 1fr;
   }
