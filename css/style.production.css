@@ -590,7 +590,7 @@ button:focus {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    width: 97%;
+    width: 95%;
   }
 
   .navigation {
