@@ -587,10 +587,18 @@ button:focus {
 
 
 @media all and (max-width: 450px) {
+  .work-content {
+    width: 100%;
+  }
+  
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    width: 95%;
+    width: 100%;
+  }
+
+  .grid_item {
+    margin: 5px auto;
   }
 
   .navigation {
@@ -620,7 +628,7 @@ button:focus {
   }
 
   .contact-form {
-    width: 90%;
+    width: 95%;
     margin-bottom: 40px;
   }
 }

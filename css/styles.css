@@ -470,9 +470,13 @@ button:focus {
 
 
 @media all and (max-width: 450px) {
+  .work-content {
+    width: 100%;
+  }
+  
   .grid {
     grid-template-columns: 1fr;
-    width: 97%;
+    width: 100%;
   }
 
   .grid_item {
@@ -497,7 +501,7 @@ button:focus {
   }
 
   .contact-form {
-    width: 90%;
+    width: 95%;
     margin-bottom: 40px;
   }
 }
