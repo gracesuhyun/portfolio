@@ -626,6 +626,7 @@ button:focus {
   .contact-info, 
   .contact-form {
     padding: 20px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
