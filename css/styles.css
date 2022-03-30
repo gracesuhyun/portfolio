@@ -333,7 +333,7 @@ button:focus {
 }
 
 .contact-info {
-  width: 40%;
+  width: 30%;
   display: flex;
   flex-direction: column;
 }
@@ -375,7 +375,7 @@ button:focus {
 }
 
 .contact-form {
-  width: 50%;
+  width: 40%;
   padding: 40px;
   background: white;
 }
