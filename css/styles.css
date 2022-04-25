@@ -81,10 +81,10 @@ h1 {
   font-weight: 700;
 }
 
-a {
+/* a {
   color: black;
   text-decoration: none;
-}
+} */
 
 a:hover {
   text-decoration: none;
