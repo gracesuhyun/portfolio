@@ -8,10 +8,11 @@ Code starting here is for ALL PAGES */
   --navy: #11155A;
   --blue: #5b6f7c;
   --light-blue: #a1adb4;
-  --dark-blue: #163245;
+  --dark-blue: #334d65;
   --blue-background: #81c2ef;
   --yellow: #fbe39b;
   --red: #e44f4f;
+  --button-outline: #1a2129;
 }
 
 input, select, button {
@@ -110,7 +111,7 @@ button {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid black;
+  border: 2px solid var(--button-outline);
   transition: 0.7s opacity;
 }
 
