@@ -6,7 +6,7 @@ Code starting here is for ALL PAGES */
 
 :root {
   --navy: #11155A;
-  --blue: #5b6f7c;
+  --blue: #678192;
   --light-blue: #a1adb4;
   --dark-blue: #163245;
   --blue-background: #81c2ef;
@@ -450,6 +450,7 @@ button:focus {
   margin: 0 10px;
   min-height: 200px;
   padding: 60px 20px;
+  cursor: default;
 }
 
 .grid_item {
@@ -458,13 +459,23 @@ button:focus {
   border: groove;
   padding: 20px;
   border-radius: 20px;
+  cursor: default;
 }
 
 .grid_item:hover,
 .grid_item:focus {
-	cursor:  pointer;
+	cursor:  default;
 	transform: scale(1.05, 1.05);
 	background-color:  white;
+}
+
+.work-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.code-link {
+  float: right;
 }
 
 
