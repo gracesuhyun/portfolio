@@ -6,13 +6,12 @@ Code starting here is for ALL PAGES */
 
 :root {
   --navy: #11155A;
-  --blue: #5b6f7c;
+  --blue: #678192;
   --light-blue: #a1adb4;
-  --dark-blue: #334d65;
+  --dark-blue: #163245;
   --blue-background: #81c2ef;
   --yellow: #fbe39b;
   --red: #e44f4f;
-  --button-outline: #1a2129;
 }
 
 input, select, button {
@@ -68,10 +67,10 @@ header .page-header_item:last-child {
   text-decoration: none;
 }
 
-/* .berlin {
+.berlin {
   margin: 0 auto;
   max-width: 800px;
-} */
+}
 
 .intro {
   margin: 20px;
@@ -82,10 +81,10 @@ h1 {
   font-weight: 700;
 }
 
-/* a {
+a {
   color: black;
   text-decoration: none;
-} */
+}
 
 a:hover {
   text-decoration: none;
@@ -111,7 +110,7 @@ button {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border: 2px solid var(--button-outline);
+  border-bottom: 2px solid black;
   transition: 0.7s opacity;
 }
 
@@ -230,7 +229,7 @@ button:focus {
   width: 100%;
   background: var(--dark-blue);
   border-left: 2px solid var(--yellow);
-  animation: typing 1.5s steps(11) infinite;
+  animation: typing 1.5s steps(13) infinite;
 }
 
 @keyframes typing {
@@ -310,7 +309,7 @@ button:focus {
 }
 
 .contact-intro {
-  max-width: 850px;
+  max-width: 800px;
   text-align: center;
 }
 
@@ -451,6 +450,7 @@ button:focus {
   margin: 0 10px;
   min-height: 200px;
   padding: 60px 20px;
+  cursor: default;
 }
 
 .grid_item {
@@ -459,29 +459,30 @@ button:focus {
   border: groove;
   padding: 20px;
   border-radius: 20px;
+  cursor: default;
 }
 
 .grid_item:hover,
 .grid_item:focus {
-	cursor:  pointer;
+	cursor:  default;
 	transform: scale(1.05, 1.05);
 	background-color:  white;
 }
 
+.work-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.code-link {
+  float: right;
+}
 
 
-@media all and (max-width: 450px) {
-  .work-content {
-    width: 100%;
-  }
-  
+
+@media all and (max-width: 400px) {
   .grid {
     grid-template-columns: 1fr;
-    width: 100%;
-  }
-
-  .grid_item {
-    margin: 5px auto;
   }
 
   .navigation {
@@ -492,22 +493,27 @@ button:focus {
     min-height: 250px;
     flex-direction: column;
   }
+  
+  .contact-content {
+    padding: 50px;
+  }
 
   .contact-container {
     flex-direction: column;
   }
 
-  .contact-info {
-    width: 100%;
+  .contact-container .contact-info {
+    margin-bottom: 40px;
   }
 
+  .contact-container .contact-info, 
   .contact-form {
-    width: 95%;
-    margin-bottom: 40px;
+    width: 100%;
+    padding: 20px;
   }
 }
 
-@media all and (min-width: 451px) and (max-width: 770px){
+@media all and (min-width: 401px) and (max-width: 770px){
   .grid {
     grid-template-columns: 1fr 1fr;
   }
