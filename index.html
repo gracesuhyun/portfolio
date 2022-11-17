@@ -1,89 +1,519 @@
 <!DOCTYPE html>
+    <html lang="en">
+        
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Grace An's Portfolio</title>
-		<link rel="shortcut icon" href="img/favicon.png"/>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/style.production.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
-		<meta name="description" content="This is the website portfolio of Grace An, a student at CareerFoundry"/>
-	</head>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-	<body>
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-	    <header>
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-			<div class="page-header_item">
-			<a href="#" class="logo">Grace An</a>
-			</div>
+        <title>Grace An - Portfolio Website</title>
+    </head>
 
-			<nav class="page-header_item">
-				<ul role="menubar" class="navigation">
-					<li role="presentation">
-						<a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
-					</li>
-					<li role="presentation">
-						<a href="about.html" role="menuitem" class="navigation-list_item">About</a>
-					</li>
-					<li role="presentation">
-						<a href="work.html" role="menuitem" class="navigation-list_item">Work</a>
-					</li>
-					<li role="presentation">
-						<a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
-					</li>
-				</ul>
-			</nav>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    Grace
+                </a>
 
-	    </header>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="ri-home-3-line"></i> Home
+                            </a>
+                        </li>
 
-		<section class="container">
-			<div class="card">
-				<div class="imgBx">
-					<img src="img/card.PNG" width="260px">
-				</div>
-				
-				<div class="content">
-					<h2>Hello World!</h2>
-					<p>My name is Grace An! I am a <span class="web">web</span> developer from New Jersey.</p>
-					<br>
-					<a href="https://github.com/gracesuhyun" target="_blank">Click here to check out my code!</a>
-				</div>
-			</div>
-		</section>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="ri-trophy-line"></i> Skills
+                            </a>
+                        </li>
 
-		<footer class="page-footer">
-			<div class="button">
-				<button type="button">Download My Resume</button>
-			</div>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">
+                                <i class="ri-book-mark-line"></i> Qualification
+                            </a>
+                        </li>
 
-			<div class="find-me">
-			<p>Find me on</p>
-			<br>
-			<a class="find-me" href="https://github.com/gracesuhyun" target="_blank">
-				<img src="img/github.png"
-					width="30px"
-			alt="Visit my Github"/>
-			</a>
-			<a class="find-me" href="https://facebook.com/username" target="_blank">
-				<img src="img/facebook.png"
-					width="30px"
-			alt="Visit my Facebook"/>
-			</a>
-			<a class="find-me" href="https://linkedin.com/in/gracesuhyun" target="_blank">
-				<img src="img/linkedin.png"
-					width="30px"
-			alt="Visit my LinkedIn"/>
-			</a>
-			</div>
-		</footer>
+                        <li class="nav__item">
+                            <a href="#projects" class="nav__link">
+                                <i class="ri-image-line"></i> Projects
+                            </a>
+                        </li>
 
-	</body>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="ri-chat-check-line"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
 
-	<script src="js/tota11y.min.js"></script>
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
 
+                <div class="nav__buttons">
+                    <!-- changing the day and night theme -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid section__border">
+                    <div class="home__data grid">
+                        <h1 class="home__title">
+                            Hi, I’m Grace <br>
+                            Fullstack Developer <br>
+                            Based In New Jersey <br>
+                        </h1>
+
+                        <div class="home__blob grid">
+                            <div class="home__profile">
+                                <img src="assets/img/profile.png" alt="home profile">
+                            </div>
+
+                            <img src="assets/img/shape-waves.svg" alt="" class="home__shape-waves">
+                            <img src="assets/img/shape-circle.svg" alt="" class="home__shape-circle">
+                        </div>
+
+                        <ul class="home__social">
+                            <a href="www.linkedin.com/in/gracesuhyun" target="_blank" class="home__social-link">
+                                <i class="ri-linkedin-box-fill"></i>
+                            </a>
+
+                            <a href="https://github.com/gracesuhyun" target="_blank" class="home__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/_gracean/" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <!--==================== HOME INFO 1 ====================-->
+                    <div class="home__info">
+                        <div>
+                            <h class="home__info-title">
+                                BIOGRAPHY
+                            </h>
+                            <p class="home__info-description">
+                                Hi, I'm Grace, Fullstack Developer.
+                                Passionate about connecting people
+                                and resources with efficient website
+                                design. Based in New Jersey.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h class="home__info-title">
+                                CONTACT
+                            </h>
+                            <p class="home__info-description">
+                                New Jersey, USA <br>
+                                grace.contactform@gmail.com <br>
+                                347-509-7411 <br>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!--==================== HOME INFO 2 ====================-->
+                    <div class="home__info">
+                        <div>
+                            <h3 class="home__info-title">
+                                COMPLETED PROJECTS
+                            </h3>
+                            <p class="home__info-number">
+                                6+
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="home__info-title">
+                               YEARS OF EXPERIENCE
+                            </h3>
+                            <p class="home__info-number">
+                                2+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My favorite skills</span>
+
+                <div class="skills__container container grid section__border">
+                    <div class="skills__content">
+                        <h3 class="skills__title">
+                            <i class="ri-braces-line"></i> Frontend Developer 
+                        </h3>
+
+                        <div class="skills__info">
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/html-1.svg" alt="skills image">
+                                </div>
+
+                                <h3 class="skills__name">HTML</h3>
+                                <span class="skills_subtitle">Advanced</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/css-3.svg" alt="skills image">
+                                </div>
+
+                                <h3 class="skills__name">CSS</h3>
+                                <span class="skills_subtitle">Advanced</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/logo-javascript.svg" alt="skills image">
+                                </div>
+
+                                <h3 class="skills__name">JavaScript</h3>
+                                <span class="skills_subtitle">Intermediate</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/react-2.svg" alt="skills image">
+                                </div>
+
+                                <h3 class="skills__name">React</h3>
+                                <span class="skills_subtitle">Advanced</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/git-icon.svg" alt="skills image">
+                                </div>
+
+                                <h3 class="skills__name">Git</h3>
+                                <span class="skills_subtitle">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">Qualifications</h2>
+                <span class="section__subtitle">Experience & Education</span>
+
+                <div class="qualification__container container grid section__border">
+                    <!--==================== QUALIFICATION 1 ====================-->
+                    <div class="qualification__content">
+                        <h3 class="qualification__title">
+                            <i class="ri-book-mark-line"></i> Education
+                        </h3>
+
+                        <div class="qualification__info">
+                            <div>
+                                <h3 class="qualification__name">
+                                    B.S. Recreation Administration
+                                </h3>
+                                <span class="qualification__country">University of Minnesota</span>
+                                <span class="year">2016 - 2020</span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name">
+                                    Web Development Program
+                                </h3>
+                                <span class="qualification__country">CareerFoundry</span>
+                                <span class="year">2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION 2 ====================-->
+                    <div class="qualification__content">
+                        <h3 class="qualification__title">
+                            <i class="ri-building-line"></i> Work
+                        </h3>
+
+                        <div class="qualification__info">
+                            <div>
+                                <h3 class="qualification__name">
+                                    Office Manager
+                                </h3>
+                                <span class="qualification__country">Leonia Recreation Department</span>
+                                <span class="year">2021 - 2022</span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__name">
+                                    High School Math Tutor
+                                </h3>
+                                <span class="qualification__country">Self-Employed</span>
+                                <span class="year">2020 - 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img">
+            </section>
+
+            <!--==================== PROJECTS ====================-->
+            <section class="projects section" id="projects">
+                <h2 class="section__title">Projects</h2>
+                <span class="section__subtitle">Most Recent Work</span>
+
+                <div class="container section__border">
+                    <div class="projects__container swiper">
+                        <div class="swiper-wrapper">
+                            <!--==================== PROJECT 1 ====================-->
+                            <div class="projects__content swiper-slide">
+                                <img src="assets/img/project1-pokedex.png" alt="projects image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle">JS Web App</span>
+                                    <h1 class="projects__title">Pokedex Website</h1>
+
+                                    <a href="https://gracesuhyun.github.io/pokedex/" class="projects__button">
+                                        View Demo <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--==================== PROJECT 2 ====================-->
+                            <div class="projects__content swiper-slide">
+                                <img src="assets/img/project2-api.PNG" alt="projects image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle">REST API</span>
+                                    <h1 class="projects__title">myFlix API</h1>
+
+                                    <a href="https://github.com/gracesuhyun/myFlix-API" class="projects__button">
+                                        View Code <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--==================== PROJECT 3 ====================-->
+                            <div class="projects__content swiper-slide">
+                                <img src="assets/img/project3-react.png" alt="projects image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle">React App</span>
+                                    <h1 class="projects__title">myFlix Movie Application</h1>
+
+                                    <a href="https://gracean-myflix.netlify.app/" class="projects__button">
+                                        View Demo <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--==================== PROJECT 4 ====================-->
+                            <div class="projects__content swiper-slide">
+                                <img src="assets/img/project4-meet.png" alt="projects image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle">Serverless PWA</span>
+                                    <h1 class="projects__title">Meet App</h1>
+
+                                    <a href="https://gracesuhyun.github.io/meet-app/" class="projects__button">
+                                        View Demo <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--==================== PROJECT 5 ====================-->
+                            <div class="projects__content swiper-slide">
+                                <img src="assets/img/project5-chat.png" alt="projects image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle">React Native App</span>
+                                    <h1 class="projects__title">Chat App for Mobile Devices</h1>
+
+                                    <a href="https://github.com/gracesuhyun/chat-app" class="projects__button">
+                                        View Code <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--==================== PROJECT 6 ====================-->
+                            <div class="projects__content swiper-slide">
+                                <img src="assets/img/project6-angular.png" alt="projects image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle">Angular Web App</span>
+                                    <h1 class="projects__title">myFlix Movie Application</h1>
+
+                                    <a href="https://gracesuhyun.github.io/myFlix-Angular-client/welcome" class="projects__button">
+                                        View Demo <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- swiper arrows -->
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
+
+                <div class="contact__container container grid section__border">
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            <i class="ri-chat-smile-line"></i> Talk to me
+                        </h3>
+
+                        <div class="contact__info">
+                            <div class="contact__data">
+                                <span class="contact__data-title">Email</span>
+                                <span class="contact__data-info">grace.contactform@gmail.com</span>
+                            </div>
+
+                            <div class="contact__data">
+                                <span class="contact__data-title">Phone</span>
+                                <span class="contact__data-info">(347) 509-7411</span>
+                                <a href="tel:+13475097411" target="_blank" class="contact__button">
+                                    Call me <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+
+                            <div class="contact__data">
+                                <span class="contact__data-title">Instagram</span>
+                                <span class="contact__data-info">@_gracean</span>
+                                <a href="https://www.instagram.com/_gracean/" target="_blank" class="contact__button">
+                                    Write me <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            <i class="ri-send-plane-line"></i> Write me your project
+                        </h3>
+
+                        <form action="" class="contact__form" id="contact-form">
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Names</label>
+                                <input type="text" name="user-name" required placeholder="Write your name" class="contact__form-input" id="contact-name">
+                            </div>
+
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Email</label>
+                                <input type="text" name="user-email" required placeholder="Write your email" class="contact__form-input" id="contact-email">
+                            </div>
+
+                            <div class="contact__form-div contact__form-area">
+                                <label for="" class="contact__form-tag">Project</label>
+                                <textarea name="user-project" placeholder="Write your project" id="contact-project" class="contact__form-input"></textarea>
+                            </div>
+
+                            <p class="contact__message" id="contact-message"></p>
+
+                            <button type="submit" class="contact__button">
+                                Submit <i class="ri-arrow-right-up-line"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Grace</h1>
+                <p>Full Stack Developer</p>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#home" class="footer__link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__social">
+                    <a href="https://www.linkedin.com/in/gracesuhyun/" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+
+                    <a href="https://github.com/gracesuhyun" target="_blank" class="footer__social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/_gracean/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; Copyright Bedimcode. All rights reserved
+                </span>
+            </div>
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+        <a href="" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        
+        <!--=============== EMAIL JS ===============-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
