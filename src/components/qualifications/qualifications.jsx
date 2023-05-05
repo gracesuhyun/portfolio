@@ -39,15 +39,15 @@ const Qualifications = () => {
                             <i className="ri-building-line"></i> Work
                         </h3>
 
-                        <div>
-                            <h3 className="qualification__name">
-                                Frontend Developer
-                            </h3>
-                            <span className="qualification__country">Chingu.io</span>
-                            <span className="year">2023</span>
-                        </div>
-
                         <div className="qualification__info">
+                            <div>
+                                <h3 className="qualification__name">
+                                    Frontend Developer
+                                </h3>
+                                <span className="qualification__country">Chingu.io</span>
+                                <span className="year">2023</span>
+                            </div>
+
                             <div>
                                 <h3 className="qualification__name">
                                     Office Manager
