@@ -8,7 +8,7 @@ const Qualifications = () => {
                 <span className="section__subtitle">Education & Experience</span>
 
                 <div className="qualification__container container grid section__border">
-                    {/* ==================== QUALIFICATION 1 =================== */}
+                    {/* ==================== EDUCATION =================== */}
                     <div className="qualification__content">
                         <h3 className="qualification__title">
                             <i className="ri-book-mark-line"></i> Education
@@ -28,16 +28,24 @@ const Qualifications = () => {
                                     B.S. Recreation Administration
                                 </h3>
                                 <span className="qualification__country">University of Minnesota</span>
-                                <span className="year">2016 - 2020</span>
+                                <span className="year">2020</span>
                             </div>
                         </div>
                     </div>
 
-                    {/* ==================== QUALIFICATION 2 ==================== */}
+                    {/* ==================== EXPERIENCE ==================== */}
                     <div className="qualification__content">
                         <h3 className="qualification__title">
                             <i className="ri-building-line"></i> Work
                         </h3>
+
+                        <div>
+                            <h3 className="qualification__name">
+                                Frontend Developer
+                            </h3>
+                            <span className="qualification__country">Chingu.io</span>
+                            <span className="year">2023</span>
+                        </div>
 
                         <div className="qualification__info">
                             <div>
@@ -47,12 +55,13 @@ const Qualifications = () => {
                                 <span className="qualification__country">Leonia Recreation Department</span>
                                 <span className="year">2021 - 2022</span>
                             </div>
+
                             <div>
                                 <h3 className="qualification__name">
                                     High School Math Tutor
                                 </h3>
                                 <span className="qualification__country">Self-Employed</span>
-                                <span className="year">2020 - 2022</span>
+                                <span className="year">2020 - 2023</span>
                             </div>
                         </div>
                     </div>
