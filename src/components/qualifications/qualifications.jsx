@@ -17,6 +17,14 @@ const Qualifications = () => {
                         <div className="qualification__info">
                             <div>
                                 <h3 className="qualification__name">
+                                    UX Design Program
+                                </h3>
+                                <span className="qualification__country">CareerFoundry</span>
+                                <span className="year">In Progress</span>
+                            </div>
+
+                            <div>
+                                <h3 className="qualification__name">
                                     Web Development Program
                                 </h3>
                                 <span className="qualification__country">CareerFoundry</span>
@@ -42,7 +50,7 @@ const Qualifications = () => {
                         <div className="qualification__info">
                             <div>
                                 <h3 className="qualification__name">
-                                    Frontend Developer
+                                    UX Developer
                                 </h3>
                                 <span className="qualification__country">Chingu.io</span>
                                 <span className="year">2023</span>
