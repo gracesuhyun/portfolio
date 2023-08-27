@@ -16,6 +16,15 @@ const Skills = () => {
                         <div className="skills__info">
                             <div className="skills__data">
                                 <div className="skills__blob">
+                                    <img src="img/figma-icon.svg" alt="Figma"/>
+                                </div>
+
+                                <h3 className="skills__name">Figma</h3>
+                                <span className="skills_subtitle">Advanced</span>
+                            </div>
+
+                            <div className="skills__data">
+                                <div className="skills__blob">
                                     <img src="img/html-1.svg" alt="HTML"/>
                                 </div>
 
@@ -66,14 +75,6 @@ const Skills = () => {
 
                                 <h3 className="skills__name">Next.js</h3>
                                 <span className="skills_subtitle">Intermediate</span>
-                            </div>
-
-                            <div className="skills__data">
-                                <div className="skills__blob">
-                                    <img src="img/jquery-icon.svg" alt="jQuery"/>
-                                </div>
-
-                                <h3 className="skills__name">jQuery</h3>
                             </div>
 
                             <div className="skills__data">
