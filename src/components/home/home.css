@@ -518,7 +518,7 @@ img {
 }
 
 .contact__title{
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   column-gap: .5rem;
@@ -544,6 +544,7 @@ img {
 
 .contact__data{
   row-gap: .75rem;
+  text-align: center;
 }
 
 .contact__data-title{
@@ -558,9 +559,10 @@ img {
 }
 
 .contact__button{
-  width: max-content;
-  display: inline-flex;
-  align-items: center;
+  /* width: max-content;
+  display: inline-flex; */
+  text-align: center;
+  /* align-items: center; */
   column-gap: .5rem;
   color: var(--title-color);
   font-size: var(--small-font-size);

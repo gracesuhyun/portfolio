@@ -45,9 +45,7 @@ const Home = () => {
               </h3>
               <p className="home__info-description">
                   Hi, I'm Grace, a Fullstack Developer.
-                  Passionate about connecting people
-                  to resources through efficient website
-                  design.
+                  Passionate about connecting people to resources through efficient and user-friendly applications.
               </p>
             </div>
 
@@ -70,16 +68,16 @@ const Home = () => {
                   COMPLETED PROJECTS
               </h3>
               <p className="home__info-number">
-                  6+
+                  3+
               </p>
             </div>
 
             <div>
               <h3 className="home__info-title">
-                  YEARS OF EXPERIENCE
+                  FULL-STACK PROJECTS
               </h3>
               <p className="home__info-number">
-                  2+
+                  6+
               </p>
             </div>
           </div>

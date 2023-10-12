@@ -7,11 +7,10 @@ const Contact = () => {
                 <h2 className="section__title">Contact Me</h2>
                 <span className="section__subtitle">Get in touch</span>
 
-                <div className="contact__container container grid section__border">
-                    <div className="contact__content">
-                        <h3 className="contact__title">
+                <div className="contact__container container section__border">
+                        {/* <h3 className="contact__title">
                             <i className="ri-chat-smile-line"></i> Talk to me
-                        </h3>
+                        </h3> */}
 
                         <div className="contact__info">
                             <div className="contact__data">
@@ -37,10 +36,9 @@ const Contact = () => {
                                     Write me <i className="ri-arrow-right-line"></i>
                                 </a>
                             </div>
-                        </div>
                     </div>
 
-                    <div className="contact__content">
+                    {/* <div className="contact__content">
                         <h3 className="contact__title">
                             <i className="ri-send-plane-line"></i> Write me a message
                         </h3>
@@ -67,7 +65,7 @@ const Contact = () => {
                                 Submit <i className="ri-arrow-right-up-line"></i>
                             </button>
                         </form>
-                    </div>
+                    </div> */}
                 </div>
             </section>
   )
